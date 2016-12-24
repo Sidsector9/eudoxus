@@ -1,0 +1,271 @@
+body {
+	max-width: 800px;
+	margin: 40px auto;
+	font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+}
+
+a {
+	color: #ea3e1e;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ea3e1e;
+}
+
+.site-header {
+	border: 1px solid #e5e5e5;
+}
+
+.site-branding {
+	padding: 0 15px;
+}
+
+.main-navigation {
+	border-top: 1px solid #e5e5e5;
+
+}
+
+.main-navigation a {
+	display: block;
+	padding: 8px 15px;
+    color: #000;
+    font-weight: 700;
+}
+
+.main-navigation .current-menu-item a {
+	background-color: #ea3e1e;
+	color: #fff;
+}
+
+#page {
+	background-color: #fff;
+}
+
+.overlay {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+}
+
+.blog .entry-content {
+	position: fixed;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% ) scale(0);
+	margin: 0;
+	margin-top: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.blog .entry-content:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+}
+
+.blog .entry-content:after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.scale-up {
+	transform: translate( -50%, -50% ) scale(1) !important;
+	transition: all 0.3s ease !important;
+}
+
+.blog .entry-content .post-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+    border-left: 1px solid #e5e5e5;
+	background-color: #fff;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.blog .entry-content .post-close:before {
+    font-family: dashicons;
+    content: "\f158";
+    font-size: 2.5rem;
+    position: absolute;
+    left: 5px;
+    top: -3px;
+    color: #aaa;
+}
+
+
+.blog .entry-content .post-close:hover {
+	background-color: #f9f9f9;
+}
+
+.blog .entry-content .post-close:hover:before {
+	color: #777;
+}
+
+.blog .entry-content .post-content {
+	margin-top: 25px;
+	padding: 25px;
+	max-height: calc(90vh - 25px);
+    overflow-y: auto;
+}
+
+.blog .site-main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.blog .site-main .post-item {
+	width: 50%;
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.blog .site-main .post-item:hover {
+	background-color: #f9f9f9;
+}
+
+.blog .site-main .post-item:nth-child(odd) {
+	border-left: 1px solid #e5e5e5;
+}
+
+.blog .site-main .post-item:nth-child(even) {
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+}
+
+.blog .site-main .entry-title {
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.blog .site-main .single-post-thumbnail {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.blog .site-main .single-post-thumbnail img {
+	opacity: 0;
+}
+
+.blog .site-main .single-post-title {
+	font-family: 'Merriweather', serif;
+}
+
+.blog .site-main .single-post-meta {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.blog .site-main .single-post-meta img {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 0 8px;
+    max-width: 32px;
+}
+
+#colophon {
+	padding: 4px 15px;
+	font-size: 11px;
+	background-color: #141414;
+	color: #e5e5e5;
+}
+
+/* Loading animation */
+.loading {
+	display: table;
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.85);*/
+}
+
+.spinner {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+}
+.spinner .path {
+  stroke: #141414;
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
