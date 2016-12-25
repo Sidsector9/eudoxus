@@ -5,7 +5,7 @@ Eudoxus theme is based on the [**underscores**](http://underscores.me/) starter 
 The output of the theme assignment can be found [**here**](https://nomnom33.000webhostapp.com/home/).
 
 **[Please click the first post since it has most attributes set]**<br>
-*[The free web hosting* **might** *show ERROR CONNECTING DATABASE, in that case please refresh after 5 minutes.]*
+[The web hosting service **might** show ERROR CONNECTING DATABASE, in that case please refresh after 5 minutes.]
 
 ### 1. Theme Structure
 Below are the list of folders that are additionally added to the underscores starter theme.
