@@ -14,6 +14,15 @@ a:visited {
 	color: #ea3e1e;
 }
 
+.site-title {
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 .site-header {
 	border: 1px solid #e5e5e5;
 }
@@ -63,7 +72,6 @@ a:visited {
 	left: 50%;
 	transform: translate( -50%, -50% ) scale(0);
 	margin: 0;
-	margin-top: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -86,6 +94,30 @@ a:visited {
     height: 1px;
     top: 50px;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.blog .entry-footer {
+	position: relative;
+	padding-left: 24px;
+}
+
+.blog .entry-footer span {
+	margin-right: 5px;
+}
+
+.blog .entry-footer span a {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.blog .entry-footer:before {
+	position: absolute;
+	content: "\f318";
+	font-family: dashicons;
+	left: 0;
 }
 
 .scale-up {
@@ -180,7 +212,8 @@ a:visited {
 .blog .site-main .single-post-meta {
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0;
+    margin-bottom: 25px;
+    margin-top: -8px;
 }
 
 .blog .site-main .single-post-meta img {
@@ -207,7 +240,6 @@ a:visited {
     width: 100%;
     height: 100%;
     text-align: center;
-    /*background-color: rgba(0, 0, 0, 0.85);*/
 }
 
 .spinner {
