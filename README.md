@@ -13,4 +13,4 @@ Below are the list of folders that are additionally added to the underscores sta
     * `css`
     * `js`
 
-The only file updated *(part of underscores)* is the **`functions.php`** file found in the root folder.
+The only files updated *(part of underscores)* are **`functions.php`** and **index.php** found in the root folder.
