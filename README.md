@@ -2,7 +2,9 @@ Assignment 3: Load post without reloading the whole page
 ============
 
 Eudoxus theme is based on the [**underscores**](http://underscores.me/) starter theme created by [**Automattic**](https://automattic.com/).
-The theme fetches posts using **WP REST API v2**
+
+The theme fetches posts using **WP REST API v2**.
+
 The output of the theme assignment can be found [**here**](https://nomnom33.000webhostapp.com/home/).
 
 **[Please click the first post ("Truecaller gets Call...") since it has most attributes set]**<br>
